@@ -15,4 +15,6 @@ const a = prompt("один из последних фильмов", ""),
 personalDB.movies[a] = b;
 personalDB.movies[c] = d;
 
+const body = document.querySelector(".one");
+body.insertAdjacentHTML("afterbegin", personalDB.count);
 console.log(personalDB);
