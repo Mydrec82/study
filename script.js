@@ -1,20 +1,8 @@
-const numberOfFilm = +prompt("сколько фильмов вы посмотрели", "");
-const personalDB = {
-    count: numberOfFilm,
-    movies: {},
-    actors: {},
-    genres: [],
-    private: false,
+let man = {
+    age: 45,
+    dogs: ["caca", "one", "bom"],
 };
 
-const a = prompt("один из последних фильмов", ""),
-    b = prompt("на сколько оценните его", " "),
-    c = prompt("один из последних фильмов", ""),
-    d = prompt("на сколько оценните его", " ");
+const { dogs } = man;
 
-personalDB.movies[a] = b;
-personalDB.movies[c] = d;
-
-const body = document.querySelector(".one");
-body.insertAdjacentHTML("afterbegin", personalDB.count);
-console.log(personalDB);
+console.log(dogs);
